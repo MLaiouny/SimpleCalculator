@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Calculator</title>
+</head>
+
+<body bgcolor = "B8860B">
+   <center><br>
+   <h1><font color = "white" style = "font-size: 70">Javascript Calculator</font></h1>
+   <hr size = 20 color = "black">
+   <div style = "width: 261px; background:"FFF8DC">
+   <form name = "frm">
+	<input name = "display" placeholder = "0" style= "width:248px; height: 60px; text-align: right; font-size: 30; border-radius: 8px; margin:3px/">
+        <br>
+	<input type="button" value="7" onClick= "run7()" style = "width:60px; height:60px;font-size:30; border-radius:8px;" />
+		
+	<input type="button" value="8" onClick = "run8()" style = "width:60px; height:60px;font-size:30; border-radius:8px;" />
+		
+  	
+   	<input type="button" value="9" onClick = "run9()"style = "width:60px; height:60px;font-size:30; border-radius:8px; margin:3px" />
+		
+	<input type="button" value="+" onClick = "runPlus()" style = "width:60px; height:60px;font-size:30; border-radius:8px; maring:3px" />
+		
+	<br>
+	<input type="button" value="4" onClick = "run4()" style = "width:60px; height:60px;font-size:30; border-radius:8px; margin:3px" />
+		
+	<input type="button" value="5" onClick = "run5()" style = "width:60px; height:60px;font-size:30; border-radius:8px;" />
+		
+	<input type="button" value="6" onClick = "run6()" style = "width:60px; height:60px;font-size:30; border-radius:8px" />
+		
+	<input type="button" value="-" onClick = "runMinus()"style = "width:60px; height:60px;font-size:30; border-radius:8px" />
+		
+	<br>
+	<input type="button" value="1" onClick = "run1()" style = "width:60px; height:60px;font-size:30; border-radius:8px; margin:3px" />
+		
+	<input type="button" value="2" onClick= "run2()" style = "width:60px; height:60px;font-size:30; border-radius:8px" />
+		
+	<input type="button" value="3" onClick= "run3()" style = "width:60px; height:60px;font-size:30; border-radius:8px" />
+		
+	<input type="button" value="x" onClick = "runMultiply()"style = "width:60px; height:60px;font-size:30; border-radius:8px" />
+		
+	<br>
+
+	<input type="button" value="0" onClick = "run0()" style = "width:60px; height:60px;font-size:30; border-radius:8px; margin:3px" />
+		
+	<input type="button" value="%" onClick = "runModulus()"style = "width:60px; height:60px;font-size:30; border-radius:8px;" />
+		
+	<input type="button" value="." onClick= "runDecimal()"style = "width:60px; height:60px;font-size:30; border-radius:8px;" />
+		
+	<input type="button" value="/" onClick = "runDivision()"style = "width:60px; height:60px;font-size:30; border-radius:8px;" />
+		
+	<br>
+	<input type="button" value = "=" onClick = "runEqual()" style = "width:120px; height:60px;font-size:30; border-radius:8px; margin:3px" />
+		
+	<input type="button" value="c" onClick = "runClear()" style = "width:120px; height:60px;font-size:30; border-radius:8px; margin:3px" />
+		
+   </form>
+
+</div>
+
+<script>
+	var fResult = 0;
+
+	function run7()
+	{document.frm.display.value += '7';}
+
+	function run8()
+	{document.frm.display.value += '8';}
+
+	function run9()
+	{document.frm.display.value += '9';}
+
+	function run4()
+	{document.frm.display.value += '4';}
+
+	function run5()
+	{document.frm.display.value += '5';}
+
+	function run6()
+	{document.frm.display.value += '6';}
+
+	function run1()
+	{document.frm.display.value += '1';}
+
+	function run2()
+	{document.frm.display.value += '2';}
+	
+	function run3()
+	{document.frm.display.value += '3';}
+
+	function run0()
+	{document.frm.display.value += '0';}
+
+	function runClear()
+
+
+	{document.frm.display.value = "";
+	 fResult = 0;
+	}
+
+	function runPlus()
+	{
+	  document.frm.display.value += '+';
+	  
+	}
+
+	function runMinus()
+	{ document.frm.display.value += "-";}
+
+	function runMultiply()
+	{document.frm.display.value += "*";}
+
+	function runDivision()
+	{document.frm.display.value += "/";}
+
+	function runDecimal()
+	{document.frm.display.value += ".";}
+
+	function runModulus()
+	{document.frm.display.value += "%";}
+	
+	
+
+
+	function runEqual()
+	{
+	  document.frm.display.value = eval(document.frm.display.value);
+	  //document.calculator.display.value = "";
+	  //document.calculator.display.value= fResult;
+	}
+
+	
+</script>
+</body>
+
+</html>
